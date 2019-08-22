@@ -5,8 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IDisc</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="src/styles/materialize/css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/components/app/scorecards-display.css">
 </head>
 <body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo idisc-logo">IDisc</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="scorecards-display.html">Scorecards</a></li>
+                <li><a href="scorecard-add.html">Add A Scorecard</a></li>
+            </ul>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="/">Home</a></li>
+            <li><a href="scorecards-display.html">Scorecards</a></li>
+            <li><a href="scorecard-add.html">Add A Scorecard</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/scorecards/IMG-2950.JPG">
+                            <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>June 10 2018:</p>
+                            <span class="card-title">Milo McIver (West)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/scorecards/IMG-2950.JPG">
+                            <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>June 10 2018:</p>
+                            <span class="card-title">Milo McIver (West)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
     
+    <script type="text/javascript" src="src/styles/materialize/js/materialize.js"></script>
+    <script type="module" src="src/scorecards-display.js"></script>
 </body>
 </html>
