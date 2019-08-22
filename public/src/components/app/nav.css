@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab:500&display=swap');
+
+.idisc-logo {
+    margin-left: 2%;
+    font-family: 'Hepta Slab', serif;
+    font-style: italic;    
+}
+.idisc-logo::first-letter {
+    color: #f57f17;
+}
