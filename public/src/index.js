@@ -5,5 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const elems = document.querySelectorAll('.sidenav');
+    // eslint-disable-next-line no-undef
     M.Sidenav.init(elems);
 });

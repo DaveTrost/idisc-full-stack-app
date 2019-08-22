@@ -1,3 +1,5 @@
+/* eslint-disable no-prototype-builtins */
+/* eslint-disable no-redeclare */
 /*!
  * Materialize v1.0.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
