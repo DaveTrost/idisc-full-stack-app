@@ -20,14 +20,14 @@ This app is for displaying disc golf scorecards and the data contained therein.
 ## Development plan
 
 - edit vs-code settings based on lab notes - DONE - but the settings I added are in a lab-specific file. Is this supposed to be in a global file?
-- Setup repo structure based on lab notes
+- Setup repo structure based on lab notes - DONE
   - data - done
   - lib - done
   - public/assets - done
   - public/src - done
   - public/test - done
   - public - DONE
-- Take care of dependecies
+- Take care of dependecies - DONE
 - find fonts and graphics and colors
 - front end template with static card
 - build scorecards.js
