@@ -30,4 +30,18 @@ This app is for displaying disc golf scorecards and the data contained therein.
 - Take care of dependecies - DONE
 - FRONT END WORK - to be done in vscode @ /public
 - BACK END WORK
-  - bootstrap database
+  - database stuff
+    - test database creation steps and adding information in psql
+    - bootstrap database with create-tables and load-seed-data
+    - implement drop-table
+    - view the data using psql console
+  - server stuff
+    - build a server with a route and start it
+    - connect with the server via postman and watch log values
+    - connect the server to the database using postgres
+    - query the database using postgres
+    - build and format the return array
+    - send the result to the client
+    - verify response quality using postman
+  - front to back communication
+    - duplicate the postman query from the front end
