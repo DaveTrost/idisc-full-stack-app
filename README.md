@@ -29,9 +29,5 @@ This app is for displaying disc golf scorecards and the data contained therein.
   - public - DONE
 - Take care of dependecies - DONE
 - FRONT END WORK - to be done in vscode @ /public
-  - front end template with static card
-  - find fonts and graphics and colors
-  - build scorecards.js
-  - import data from database to render cards
 - BACK END WORK
   - bootstrap database
