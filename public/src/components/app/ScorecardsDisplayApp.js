@@ -19,19 +19,11 @@ export class ScorecardDisplayApp extends Component {
     }
 
     updateScorecards(scorecardsDisplayRow) {
-        // const scorecardsData = getScorecards();
-        // scorecardsData.then(data => {
-        //     scorecardsDisplayRow.update({ scorecards: data });
-        // });
-        const scorecardsData = [{
-            url: 'assets/scorecards/IMG-2950.JPG',
-            courseName: 'Milo McIver (West)',
-            date: 'June 10 2018',
-            score: 73,
-            scoreToPar: 12,
-            isRatedRound: false,
-        }];
-        scorecardsDisplayRow.update({ scorecards: scorecardsData });
+        getScorecards()
+            .then(data => {
+                scorecardsDisplayRow.update({ scorecards: data });
+            })
+        ;
     }
 
     renderHTML() {

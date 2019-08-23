@@ -1,11 +1,6 @@
-import { scorecards } from ''./scorecards.js';
+const URL = 'http://localhost:3000/api';
 
-const URL = '/api';
-
-export function getScorecards() {  
-
-    return scorecards;
-
+export function getScorecards() {
     const url = `${URL}/scorecards`;
     return fetch(url)
         .then(response => response.json());
