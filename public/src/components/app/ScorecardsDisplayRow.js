@@ -5,7 +5,7 @@ export class ScorecardsDisplayRow extends Component {
 
     onRender(dom) {
         this.props.scorecards.forEach(scorecardData => {
-            const scorecard = new Scorecard({ props: scorecardData });
+            const scorecard = new Scorecard({ scorecard: scorecardData });
             dom.appendChild(scorecard.renderDOM());
         });
     }
