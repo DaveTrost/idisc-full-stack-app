@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000/api';
+const URL = '/api';
 
 export function getScorecards() {
     const url = `${URL}/scorecards`;
