@@ -31,9 +31,9 @@ This app is for displaying disc golf scorecards and the data contained therein.
 - FRONT END WORK - to be done in vscode @ /public
 - BACK END WORK
   - database stuff
-    - test database creation steps and adding information in psql
-    - bootstrap database with create-tables and load-seed-data
-    - implement drop-table
+    - test database creation steps and adding information in psql - DONE
+    - bootstrap database with create-table and drop-table - DONE
+    - implement load-seed-data
     - view the data using psql console
   - server stuff
     - build a server with a route and start it
