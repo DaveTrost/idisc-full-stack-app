@@ -5,7 +5,7 @@
 
 ## Overview
 
-This app is for displaying disc golf scorecards and the data contained therein.
+This app is for displaying disc golf scorecards and the data contained therein. The target audience is the player who wants to have analytics for their game across time, courses, holes, tournaments, and locations. Graphical plotting of the user's stats wil enable pattern recognition for strenths and weaknesses so the user can target their practice time appropriately.
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
@@ -15,7 +15,11 @@ This app is for displaying disc golf scorecards and the data contained therein.
 - The server and app are grouped together in this (single) repository
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+- This is a full-stack application with all components in one repository.
+- Client architecture is in the "public" folder and the client application includes: web front-end, server requests are made using fetch(). Front-end component styles are built on the Materialize CSS/JS framework.
+- Server architecture is provided from server.js. The server is built using Express for handling HTTP protocol, CORS for deploying the server alongside the client application, dotenv for handling environemnt settings, and Postgres for database communications.
+- The database is an SQL database.
 
 ## Development plan
 
@@ -42,4 +46,5 @@ This app is for displaying disc golf scorecards and the data contained therein.
     - build and format the return array - DONE
     - verify response details using postman - DONE
   - front to back communication
-    - duplicate the postman query from the front end
+    - verify that all fron-end components are working as expected ...
+      - Build out a lot more code to get the appropriate hierarchy for rendering cards from the list of data - DONE
