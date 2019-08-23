@@ -36,12 +36,10 @@ This app is for displaying disc golf scorecards and the data contained therein.
     - implement load-seed-data - DONE
     - view the data using psql console - DONE
   - server stuff
-    - build a server with a route and start it
-    - connect with the server via postman and watch log values
-    - connect the server to the database using postgres
-    - query the database using postgres
-    - build and format the return array
-    - send the result to the client
-    - verify response quality using postman
+    - build a server with a route and start it - DONE
+    - connect with the server via postman and watch log values - DONE
+    - query the database using postgres - DONE
+    - build and format the return array - DONE
+    - verify response details using postman - DONE
   - front to back communication
     - duplicate the postman query from the front end
