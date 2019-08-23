@@ -33,8 +33,8 @@ This app is for displaying disc golf scorecards and the data contained therein.
   - database stuff
     - test database creation steps and adding information in psql - DONE
     - bootstrap database with create-table and drop-table - DONE
-    - implement load-seed-data
-    - view the data using psql console
+    - implement load-seed-data - DONE
+    - view the data using psql console - DONE
   - server stuff
     - build a server with a route and start it
     - connect with the server via postman and watch log values
