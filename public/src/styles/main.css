@@ -13,3 +13,11 @@ section li.idisc-bulleted {
     list-style-type: disc;
     margin-left: 1.5em;
 }
+section li.idisc-bulleted:last-of-type {
+    margin-bottom: 3.5em;
+}
+
+
+.cover-img {
+    width: 100%;
+}

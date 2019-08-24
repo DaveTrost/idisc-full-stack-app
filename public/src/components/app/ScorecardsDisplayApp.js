@@ -28,7 +28,7 @@ export class ScorecardDisplayApp extends Component {
 
     renderHTML() {
         return /*html*/ `
-            <main class="container"></main>
+            <main></main>
         `;
     }
 }

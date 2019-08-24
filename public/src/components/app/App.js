@@ -11,7 +11,7 @@ export class App extends Component {
     renderHTML() {
         return /*html*/ `
             <main>
-                <img class="responsive-img" src="assets/cover.jpg" alt="image of a person on a disc golf course">
+                <img class="responsive-img cover-img" src="assets/cover.jpg" alt="image of a person on a disc golf course">
                 <section class="container">
                     <h3 class="orange-text">Deep Insights Into Your Game</h3>
                     <ul>

@@ -12,7 +12,8 @@ export class ScorecardsDisplayRow extends Component {
 
     renderHTML() {
         return /*html*/ `
-            <div class="row"></div>
+            <div class="container row scorecards-container"></div>
         `;
     }
+    
 }

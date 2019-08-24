@@ -16,7 +16,7 @@ export class Nav extends Component {
                 <ul class="sidenav" id="mobile-demo">
                     <li><a href="/">Home</a></li>
                     <li><a href="scorecards-display.html">Scorecards</a></li>
-                    <li><a href="scorecard-add.html">Add A Scorecard</a></li>
+                    <li><a href="scorecard-add.html">Add Scorecard</a></li>
                 </ul>
             </nav>
         `;

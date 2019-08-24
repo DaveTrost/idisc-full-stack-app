@@ -10,8 +10,7 @@ export class ScorecardAddApp extends Component {
 
     renderHTML() {
         return /*html*/ `
-            <main class="container">
-            </main>
+            <main></main>
         `;
     }
 }
