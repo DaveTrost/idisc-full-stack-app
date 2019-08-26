@@ -21,3 +21,9 @@ section li.idisc-bulleted:last-of-type {
 .cover-img {
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    ul.sidenav {
+        width: 70%;
+    }
+}
