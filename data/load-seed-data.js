@@ -12,8 +12,10 @@ client.connect()
             scorecardData.map(scorecard => {
                 return client.query(`
                     INSERT INTO scorecards (url, course_name, date, score, score_to_par, is_rated_round)
-                    VALUES ('${scorecard.url}', '${scorecard.courseName}', '${scorecard.date}', ${scorecard.score}, ${scorecard.scoreToPar}, ${scorecard.isRatedRound});
-                `);
+                    VALUES ($1, $2, $3, $4, $5, $6);
+                `,
+                [scorecard.url, scorecard.courseName, scorecard.date, scorecard.score, scorecard.scoreToPar, scorecard.isRatedRound]
+                );
             })
         );
     })
