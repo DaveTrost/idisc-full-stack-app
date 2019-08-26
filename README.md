@@ -48,3 +48,10 @@ This app is for displaying disc golf scorecards and the data contained therein. 
   - front to back communication
     - verify that all fron-end components are working as expected ...
       - Build out a lot more code to get the appropriate hierarchy for rendering cards from the list of data - DONE
+
+- LAB 09 development work
+  - split one table into 2 on psql
+  - fill table with courses in create seed data
+  - test JOIN
+  - get display working again with JOIN
+  - check add scorecard to see if it needs changes after tables are split
