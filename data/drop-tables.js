@@ -9,6 +9,7 @@ client.connect()
     .then(() => {
         return client.query(`
             DROP TABLE IF EXISTS scorecards;
+            DROP TABLE IF EXISTS courses;
         `);
     })
     .then(
