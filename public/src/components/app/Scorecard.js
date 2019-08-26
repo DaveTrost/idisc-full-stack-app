@@ -4,7 +4,7 @@ export class Scorecard extends Component {
     renderHTML() {
         const info = this.props.scorecard;
         return /*html*/ `
-            <div class="col s124 m3">
+            <div class="col s12 m4 l3">
                 <div class="card">
                     <div class="card-image">
                         <img src="${info.url}">
