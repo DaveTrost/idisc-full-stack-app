@@ -8,14 +8,10 @@ const client = new Client(process.env.DATABASE_URL);
 client.connect()
     .then(() => {
         return client.query(`
-            CREATE TABLE IF NOT EXISTS courses (
-                id SERIAL PRIMARY KEY NOT NULL,
-                course_name VARCHAR(256) NOT NULL
-            );
             CREATE TABLE IF NOT EXISTS scorecards (
                 id SERIAL PRIMARY KEY NOT NULL,
                 url VARCHAR(256) NOT NULL,
-                course_id INTEGER NOT NULL REFERENCES courses(id),
+                course_name VARCHAR(256) NOT NULL,
                 date VARCHAR(256) NOT NULL,
                 score INTEGER NOT NULL,
                 score_to_par INTEGER NOT NULL,
