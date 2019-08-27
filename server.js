@@ -36,10 +36,20 @@ app.get('/api/scorecards', (req, res) => {
     ;
 });
 
+app.get('/api/courses', (req, res) => {
+    client.query(`
+        SELECT *
+        FROM courses c;
+    `)
+        .then(databaseResponse => res.status(200).json(databaseResponse.rows))
+        .catch(err => res.status(500).json({ error: err.message || err }))
+    ;
+});
+
 app.post('/api/scorecards', (req, res) => {
     client.query(`
         INSERT
-        INTO scorecards(url, course_name, date, score, score_to_par, is_rated_round)
+        INTO scorecards(url, course_id, date, score, score_to_par, is_rated_round)
         VALUES ($1, $2, $3, $4, $5, $6)
         RETURNING *;
     `,
