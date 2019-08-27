@@ -54,4 +54,7 @@ This app is for displaying disc golf scorecards and the data contained therein. 
   - fill table with courses in create seed data - DONE
   - test JOIN - DONE
   - get display working again with JOIN - DONE
-  - check add scorecard to see if it needs changes after tables are split
+  - add route to get all courses
+  - get courses in onRender for the add a scorecard form
+  - set "value" item in HTML select statement based on course id keys
+  - modify add scorecard route to put in the id instead of the course name
