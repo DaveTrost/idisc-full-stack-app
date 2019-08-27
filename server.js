@@ -20,13 +20,16 @@ app.use(express.static('public'));
 app.get('/api/scorecards', (req, res) => {
     client.query(`
         SELECT
-            url, 
-            course_name as "courseName", 
-            date, 
-            score, 
-            score_to_par as "scoreToPar", 
-            is_rated_round as "isRatedRound"
-        FROM scorecards;
+            s.url,
+            s.course_id as "courseId", 
+            c.course_name as "courseName", 
+            s.date, 
+            s.score, 
+            s.score_to_par as "scoreToPar", 
+            s.is_rated_round as "isRatedRound"
+        FROM scorecards s
+        INNER JOIN courses c
+        ON s.course_id = c.id;
     `)
         .then(databaseResponse => res.status(200).json(databaseResponse.rows))
         .catch(err => res.status(500).json({ error: err.message || err }))
